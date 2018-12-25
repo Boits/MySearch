@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Solution {
 
-    // Линейный поиск, если нужное число встречается 1 раз и выдается первое встречное
+    // Линейный поиск, если нужное число встречается 1 раз и выдается первое встречное - O(N)
     static int linearSearch1(int[] a, int found) {
 
         for (int i = 0; i < a.length; i++) {
@@ -80,7 +80,7 @@ public class Solution {
         return array;
     }
 
-    // Бинарный (двоичный) поиск
+    // Бинарный (двоичный) поиск - O(LOG(N))
     static int binarySearch(int a[], int found, int start_index, int last_index){
         int a1 = start_index;
         int b1 = last_index;
